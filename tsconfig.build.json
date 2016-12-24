@@ -1,0 +1,38 @@
+{
+	"extends": "./tsconfig",
+
+	"include": [
+		"./types/**/*.d.ts",
+		"./typings/**/*.d.ts",
+
+		"./src/**/*.ts",
+		"./test/**/*.ts"
+	],
+
+	"exclude": [
+		"./test/_*"
+	],
+
+	"compilerOptions": {
+
+		// Security
+			"noEmit":                 false, // Disable dry-run
+			"noEmitOnError":          true,  // Require no errors
+
+		// Output: Paths
+			"outDir":                 "./dist",
+			"rootDir":                "./",
+
+		// Auto Compilation
+			"watch":                  false,
+
+		// Compatibility
+			"allowJs":                false,
+
+		// SourceMaps
+			"sourceMap":              true,
+
+		// Declaration Files
+			"declaration":            true
+	}
+}

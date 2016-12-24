@@ -1,0 +1,19 @@
+// Place your settings in this file to overwrite default and user settings.
+{
+	"explorer.autoReveal": false,
+
+	"editor.tabSize": 2,
+
+	"files.exclude": {
+		"**/.git":       true,
+		"**/.svn":       true,
+		"**/.hg":        true,
+		"**/.DS_Store":  true,
+
+		"node_modules/": false,
+		"node_modules/[abcdefghijklmnopqrstuvwxyz]*": true,
+
+		"dist/**/*.js.map": { "when": "$(basename).js" },
+		"dist/**/*.d.ts":   { "when": "$(basename).js" }
+	}
+}

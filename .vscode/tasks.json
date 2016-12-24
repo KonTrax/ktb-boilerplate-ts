@@ -1,0 +1,37 @@
+{
+	// See https://go.microsoft.com/fwlink/?LinkId=733558
+	// for the documentation about the tasks.json format
+	"version": "0.1.0",
+	"command": "npm",
+	"isShellCommand": true,
+	"showOutput": "always",
+	"suppressTaskName": true,
+
+	"tasks": [
+		{	"taskName": "install",       "args": ["install"]  },
+		{	"taskName": "update",        "args": ["update"]   },
+		{	"taskName": "outdated",      "args": ["outdated"] },
+
+		{	"taskName": "start",         "args": ["run", "start"] },
+
+		{	"taskName": "test",          "args": ["run", "test"] },
+
+		{	"taskName": "build",         "args": ["run", "build"],
+			"isBuildCommand": true,      "problemMatcher": "$tsc"
+		},
+		{	"taskName": "build:ts",      "args": ["run", "build:ts"],
+			"isBuildCommand": true,      "problemMatcher": "$tsc"
+		},
+
+		{	"taskName": "rebuild",       "args": ["run", "rebuild"],
+			"isBuildCommand": true,      "problemMatcher": "$tsc"
+		},
+
+		{	"taskName": "watch",         "args": ["run", "watch"],
+			"isWatching": true,          "problemMatcher": "$tsc-watch"
+		},
+		{	"taskName": "watch:ts",      "args": ["run", "watch:ts"],
+			"isWatching": true,          "problemMatcher": "$tsc-watch"
+		}
+	]
+}

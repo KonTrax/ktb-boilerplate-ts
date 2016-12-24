@@ -1,0 +1,67 @@
+{
+	"include": [
+		"./types/**/*.d.ts",
+		"./typings/**/*.d.ts",
+
+		"./src/**/*.ts",
+		"./test/**/*.ts"
+	],
+
+	"exclude": [
+		"./test/_*"
+	],
+
+	"compilerOptions": {
+
+		// Security
+			"noEmit":                 true, // Only emit when using tsconfig.build.json
+			"noEmitOnError":          true,  // Require no errors
+
+		// Output: Paths
+			"outDir":                 "./dist",
+			"rootDir":                "./",
+
+		// Output: Environment
+			"target": "es6",
+			"lib": [
+				"es2016"
+			],
+
+		// Output: Modules
+			"module":                 "commonjs",
+			"moduleResolution":       "node",
+
+		// Output: Formatting
+			"newLine":                "LF",  // "CRLF" | "LF"
+			"removeComments":         false,
+			"preserveConstEnums":     true,
+
+		// Compatibility
+			"allowJs":                false,
+
+		// Debug: Output
+			"pretty":                 true,
+			"listEmittedFiles":       true,  // Output
+			"listFiles":              false, // Referenced
+
+		// UNSORTED
+			"noImplicitAny":          true,
+			"noImplicitThis":         true,
+			"noImplicitReturns":      true,
+			"noUnusedLocals":         false,
+			"noUnusedParameters":     false,
+
+		// UNSORTED
+			"strictNullChecks":       true,
+			"allowUnreachableCode":   false,
+
+		// UNSORTED
+			"suppressImplicitAnyIndexErrors": false,
+
+		// Additional Features
+			"experimentalDecorators": true,
+
+		// UNSORTED
+			"forceConsistentCasingInFileNames": true
+	}
+}

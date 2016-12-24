@@ -1,7 +1,46 @@
+# Local only folder
+/_local
+
+# Folder for test generated temporary files/folders
+/tmp
+
+# Packages: NPM
+/node_modules
+
+# Packages: JSPM
+/jspm_packages
+
+# Packages: Typings
+/typings
+# typings.json
+
+# Source: Typescript
+# /src
+# /test
+
+# Build: Compiled Source
+/dist/src
+
+# Build: Compiled Tests
+/dist/test
+
+# Common: Config Files
+# tsconfig.json
+# tslint.json
+
+# Common: Development Tools
+# gulpfile.js
+
 # Logs
 logs
 *.log
 npm-debug.log*
+
+# Misc
+*.log
+*.tgz
+
+###############
 
 # Runtime data
 pids
@@ -25,10 +64,6 @@ coverage
 
 # Compiled binary addons (http://nodejs.org/api/addons.html)
 build/Release
-
-# Dependency directories
-node_modules
-jspm_packages
 
 # Optional npm cache directory
 .npm
